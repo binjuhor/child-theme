@@ -1,0 +1,30 @@
+{
+  "name": "child-theme",
+  "version": "1.0.1",
+  "description": "This is a child theme base for all WordPress theme, don't wait your time to create some thing small like that, just clone and use it",
+  "author": "Binjuhor - kiemhd@outlook.com",
+  "license": "GNU-v3.0",
+  "keywords": [
+    "PHP",
+    "HTML",
+    "CSS",
+    "JS",
+    "SCSS"
+  ],
+  "homepage": "https://github.com/binjuhor/child-theme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:binjuhor/child-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/binjuhor/child-theme/issues"
+  },
+  "scripts": {
+    "watch": "node-sass -w assets/scss/styles.scss assets/css/styles.css",
+    "compressed": "node-sass assets/scss/styles.scss assets/css/styles.css --output-style compressed",
+    "build": "./build.sh export-html"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
